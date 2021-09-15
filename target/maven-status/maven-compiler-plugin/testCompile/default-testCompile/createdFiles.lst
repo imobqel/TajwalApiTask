@@ -1,0 +1,6 @@
+tests/HotelsApiTests.class
+testsHelpers/TestMethods.class
+testsHelpers/ReusableMethods.class
+tests/FlightsApiTests.class
+testsHelpers/ApiRequests.class
+testsHelpers/DateHelper.class
