@@ -2,6 +2,8 @@ package tests;
 
 import org.testng.annotations.Test;
 
+import io.restassured.response.Response;
+import testsHelpers.ApiRequests;
 import testsHelpers.ReusableMethods;
 import testsHelpers.TestMethods;
 
@@ -9,18 +11,15 @@ import testsHelpers.TestMethods;
 public class FlightsApiTests {
 
 	TestMethods testmethods = new TestMethods();
+	ApiRequests apiRequests = new ApiRequests();
+	Response response;
 
-	@Test(priority = 1)
-	public void getFlightApiStatusCodeTest() {
-
-		ReusableMethods.setBaseURL();
-		testmethods.assertGetFlightsApiStatusCodeIsTwoHundred();
-	}
-
-	@Test(priority = 2)
-	public void getFlightApiResponseBodyTest() {
+	@Test
+	public void getFlightApiPositiveTests() {
 
 		ReusableMethods.setBaseURL();
-		testmethods.assertGetFlightsApiResponseBodyValues();
+		response = apiRequests.getFlightsApi();
+		testmethods.statusCodeAssertion(response, 200);
+		testmethods.assertGetFlightsApiResponseBodyValues(response);
 	}
 }

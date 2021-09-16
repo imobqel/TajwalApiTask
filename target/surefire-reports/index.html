@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,22 +102,17 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.FlightsApiTests" class="method navigator-link" hash-for-method="getFlightApiResponseBodyTest">getFlightApiResponseBodyTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.FlightsApiTests" class="method navigator-link" hash-for-method="getFlightApiPositiveTests">getFlightApiPositiveTests</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.FlightsApiTests" class="method navigator-link" hash-for-method="getFlightApiStatusCodeTest">getFlightApiStatusCodeTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.HotelsApiTests" class="method navigator-link" hash-for-method="postAsyncHotelsApiPositiveTests">postAsyncHotelsApiPositiveTests</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.HotelsApiTests" class="method navigator-link" hash-for-method="postAsyncHotelsApiResponseBodyTest">postAsyncHotelsApiResponseBodyTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.HotelsApiTests" class="method navigator-link" hash-for-method="postAsyncHotelsApiStatusCodeTest">postAsyncHotelsApiStatusCodeTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.HotelsApiTests" class="method navigator-link" hash-for-method="postAsyncHotelsApiWithInvalidTokenNegativeTest">postAsyncHotelsApiWithInvalidTokenNegativeTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -140,16 +135,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="postAsyncHotelsApiResponseBodyTest">
-                  </a> <!-- postAsyncHotelsApiResponseBodyTest -->
-                  <span class="method-name">postAsyncHotelsApiResponseBodyTest</span>
+                  <a name="postAsyncHotelsApiPositiveTests">
+                  </a> <!-- postAsyncHotelsApiPositiveTests -->
+                  <span class="method-name">postAsyncHotelsApiPositiveTests</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="postAsyncHotelsApiStatusCodeTest">
-                  </a> <!-- postAsyncHotelsApiStatusCodeTest -->
-                  <span class="method-name">postAsyncHotelsApiStatusCodeTest</span>
+                  <a name="postAsyncHotelsApiWithInvalidTokenNegativeTest">
+                  </a> <!-- postAsyncHotelsApiWithInvalidTokenNegativeTest -->
+                  <span class="method-name">postAsyncHotelsApiWithInvalidTokenNegativeTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -162,16 +157,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getFlightApiResponseBodyTest">
-                  </a> <!-- getFlightApiResponseBodyTest -->
-                  <span class="method-name">getFlightApiResponseBodyTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="getFlightApiStatusCodeTest">
-                  </a> <!-- getFlightApiStatusCodeTest -->
-                  <span class="method-name">getFlightApiStatusCodeTest</span>
+                  <a name="getFlightApiPositiveTests">
+                  </a> <!-- getFlightApiPositiveTests -->
+                  <span class="method-name">getFlightApiPositiveTests</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -232,28 +220,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'getFlightApiStatusCodeTest')
+data.setCell(0, 1, 'getFlightApiPositiveTests')
 data.setCell(0, 2, 'tests.FlightsApiTests')
-data.setCell(0, 3, 2791);
+data.setCell(0, 3, 2608);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'getFlightApiResponseBodyTest')
-data.setCell(1, 2, 'tests.FlightsApiTests')
-data.setCell(1, 3, 1330);
+data.setCell(1, 1, 'postAsyncHotelsApiPositiveTests')
+data.setCell(1, 2, 'tests.HotelsApiTests')
+data.setCell(1, 3, 1515);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'postAsyncHotelsApiStatusCodeTest')
+data.setCell(2, 1, 'postAsyncHotelsApiWithInvalidTokenNegativeTest')
 data.setCell(2, 2, 'tests.HotelsApiTests')
-data.setCell(2, 3, 488);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'postAsyncHotelsApiResponseBodyTest')
-data.setCell(3, 2, 'tests.HotelsApiTests')
-data.setCell(3, 3, 398);
+data.setCell(2, 3, 369);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -281,23 +265,19 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">tests.FlightsApiTests</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">getFlightApiStatusCodeTest</span>
+                <span class="method-name">getFlightApiPositiveTests</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">getFlightApiResponseBodyTest</span>
-                <span class="method-start">2796 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.HotelsApiTests</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">postAsyncHotelsApiStatusCodeTest</span>
-                <span class="method-start">4127 ms</span>
+                <span class="method-name">postAsyncHotelsApiPositiveTests</span>
+                <span class="method-start">2611 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">postAsyncHotelsApiResponseBodyTest</span>
-                <span class="method-start">4617 ms</span>
+                <span class="method-name">postAsyncHotelsApiWithInvalidTokenNegativeTest</span>
+                <span class="method-start">4127 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

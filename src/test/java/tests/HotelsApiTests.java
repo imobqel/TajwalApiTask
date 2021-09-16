@@ -2,25 +2,33 @@ package tests;
 
 import org.testng.annotations.Test;
 
+import frameworkHelpers.DataReader;
+import io.restassured.response.Response;
+import testsHelpers.ApiRequests;
 import testsHelpers.ReusableMethods;
 import testsHelpers.TestMethods;
 
-//Main Hotels API tests class, it is based on TestNG annotations and it triggeres the main test methods
+// Main Hotels API tests class, it is based on TestNG annotations and it trigger the main test methods
 public class HotelsApiTests {
 
 	TestMethods testmethods = new TestMethods();
+	ApiRequests apiRequests = new ApiRequests();
+	Response response;
 
-	@Test(priority = 1)
-	public void postAsyncHotelsApiStatusCodeTest() {
+	@Test
+	public void postAsyncHotelsApiPositiveTests() {
 
 		ReusableMethods.setBaseURL();
-		testmethods.assertPostHotelsAsyncApiStatusCodeIsTwoHundred();
+		response = apiRequests.postAHotelsAsyncApi(DataReader.dataReader("validToken"));
+		testmethods.statusCodeAssertion(response, 200);
+		testmethods.assertPostHotelsAsyncApiResponseBodyValues(response);
 	}
 
-	@Test(priority = 2)
-	public void postAsyncHotelsApiResponseBodyTest() {
+	@Test
+	public void postAsyncHotelsApiWithInvalidTokenNegativeTest() {
 
 		ReusableMethods.setBaseURL();
-		testmethods.assertPostHotelsAsyncApiResponseBodyValues();
+		response = apiRequests.postAHotelsAsyncApi(DataReader.dataReader("invalidToken"));
+		testmethods.statusCodeAssertion(response, 401);
 	}
 }

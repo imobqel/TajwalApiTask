@@ -30,10 +30,10 @@ public class ApiRequests {
 	}
 
 	// PostAsyncHotelsAPI main implementation method
-	public Response postAHotelsAsyncApi() {
+	public Response postAHotelsAsyncApi(String token) {
 
 		return response = given().log().all().header("content-type", DataReader.dataReader("contentType"))
-				.header("token", DataReader.dataReader("token")).header("accept", DataReader.dataReader("accept"))
+				.header("token", token).header("accept", DataReader.dataReader("accept"))
 				.body(apiPayloads.postHotelsAsyncRequestBodyApi(randomConsecutiveDatePairs.first(),
 						randomConsecutiveDatePairs.second()))
 				.when().post(DataReader.dataReader("asyncHotelsApiResource"));
