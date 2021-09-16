@@ -7,7 +7,7 @@
 		</listener>
 	</listeners>
 
-	<test thread-count="1" name="All Tests">
+	<test thread-count="1" name="All Tests" preserve-order="true">
 
 		<classes>
 			<class name="tests.FlightsApiTests" />

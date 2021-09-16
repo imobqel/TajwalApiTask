@@ -29,9 +29,8 @@ public class ExtentReporterNG implements IReporter {
 
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
 
-		htmlReporter = new ExtentHtmlReporter(
-				System.getProperty("user.dir") + "" + File.separator + "src" + File.separator + "main" + File.separator
-						+ "java" + File.separator + "runReports" + File.separator + "TajwalAPIRunReport.html");
+		htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + File.separator + "test-output"
+				+ File.separator + "ExtentReports" + File.separator + "TajwalAPIRunReport.html");
 
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
