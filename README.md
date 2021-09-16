@@ -24,5 +24,4 @@
 
 **Report location:**
 
-To view the generated report after run, go to ProjectsPath/src/main/java/runReports/TajwalAPIRunReport.html
-
+To view the generated ExtentReport after run, go to ProjectsPath/test-output/ExtentReports/TajwalAPIRunReport.html
